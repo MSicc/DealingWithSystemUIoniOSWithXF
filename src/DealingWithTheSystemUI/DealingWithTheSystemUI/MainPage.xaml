@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DealingWithTheSystemUI.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="System UI on iOS">
+
+    <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0">
+            <StackLayout
+                x:Name="RootContentLayout"
+                Padding="0,0,0,10"
+                BackgroundColor="Wheat">
+
+
+                <Frame Margin="10,5">
+                    <StackLayout>
+                        <Label FontSize="Subtitle" Text="Large page title" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                x:Name="LargePageTitleSwitchLabel"
+                                Text="Use large page title"
+                                VerticalOptions="Center" />
+
+                            <Switch
+                                x:Name="LargePageTitleSwitch"
+                                HorizontalOptions="EndAndExpand"
+                                IsToggled="True"
+                                OnColor="DarkGreen"
+                                Toggled="LargePageTitleSwitch_Toggled" />
+                        </StackLayout>
+                        <Button
+                            x:Name="LargePageTitleDocsLink"
+                            Margin="0,-10"
+                            Clicked="LargePageTitleDocsLink_Clicked"
+                            FontSize="Default"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Documentation" />
+
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame Margin="10,5">
+                    <StackLayout>
+                        <Label FontSize="Subtitle" Text="Home indicator visibility" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                x:Name="HomeIndicatorSwitchLabel"
+                                Text="Hide home indicator"
+                                VerticalOptions="Center" />
+
+                            <Switch
+                                x:Name="HomeIndicatorSwitch"
+                                HorizontalOptions="EndAndExpand"
+                                IsToggled="True"
+                                OnColor="DarkGreen"
+                                Toggled="HomeIndicatorSwitch_Toggled" />
+                        </StackLayout>
+                        <Button
+                            x:Name="HomeIndicatorVisibilityDocsLink"
+                            Margin="0,-10"
+                            Clicked="HomeIndicatorVisibilityDocsLink_Clicked"
+                            FontSize="Default"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Documentation" />
+
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame Margin="10,5">
+                    <StackLayout>
+                        <Label FontSize="Subtitle" Text="Home indicator background color" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                x:Name="HomeIndicatorBackgroundColorLabel"
+                                Text="Same as NavigationBar"
+                                VerticalOptions="Center" />
+
+                            <Switch
+                                x:Name="HomeIndicatorBackgroundColoraSwitch"
+                                HorizontalOptions="EndAndExpand"
+                                IsToggled="True"
+                                OnColor="DarkGreen"
+                                Toggled="HomeIndicatorBackgroundColor_Toggled" />
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="10,5">
+                    <StackLayout>
+                        <Label FontSize="Subtitle" Text="Safe area" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                x:Name="SafeAreaSwitchLabel"
+                                Text="Use safe area"
+                                VerticalOptions="Center" />
+
+                            <Switch
+                                x:Name="SafeAreaSwitch"
+                                HorizontalOptions="EndAndExpand"
+                                IsToggled="True"
+                                OnColor="DarkGreen"
+                                Toggled="SafeAreaSwitch_Toggled" />
+                        </StackLayout>
+                        <Button
+                            x:Name="SafeAreaDocsLink"
+                            Margin="0,-10"
+                            Clicked="SafeAreaDocsLink_Clicked"
+                            FontSize="Default"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Documentation" />
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="10,5">
+                    <StackLayout>
+                        <Label FontSize="Subtitle" Text="NavigationBar Separator" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                x:Name="NavigationBarSeparatorSwitchLabel"
+                                Text="Hide separator"
+                                VerticalOptions="Center" />
+
+                            <Switch
+                                x:Name="NavigationBarSeparatorSwitch"
+                                HorizontalOptions="EndAndExpand"
+                                IsToggled="False"
+                                OnColor="DarkGreen"
+                                Toggled="NavigationBarSeparatorSwitch_Toggled" />
+                        </StackLayout>
+                        <Button
+                            x:Name="NavigationBarSeparatorDocsLink"
+                            Margin="0,-10"
+                            Clicked="NavigationBarSeparatorDocsLink_Clicked"
+                            FontSize="Default"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Documentation" />
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="10,5">
+                    <StackLayout>
+                        <Label FontSize="Subtitle" Text="StatusBar text color" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                x:Name="StatusBarTextColorSwitchLabel"
+                                Text="Use text color of the NavigationBar"
+                                VerticalOptions="Center" />
+
+                            <Switch
+                                x:Name="StatusBarTextColorSwitch"
+                                HorizontalOptions="EndAndExpand"
+                                IsToggled="True"
+                                OnColor="DarkGreen"
+                                Toggled="StatusBarTextColorSwitch_Toggled" />
+                        </StackLayout>
+                        <Button
+                            x:Name="StatusBarTextColorDocsLink"
+                            Margin="0,-10"
+                            Clicked="StatusBarTextColorDocsLink_Clicked"
+                            FontSize="Default"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Documentation" />
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+
+        <Frame
+            Grid.Row="1"
+            Margin="0"
+            Padding="10,10,10,0"
+            BackgroundColor="HotPink"
+            CornerRadius="0"
+            HasShadow="False"
+            VerticalOptions="End">
+            <Label
+                HorizontalOptions="Center"
+                Text="END OF USABLE AREA"
+                TextColor="White" />
+
+        </Frame>
+    </Grid>
+</ContentPage>
